@@ -4,4 +4,5 @@ export interface Post {
     description: string;
     image_url: string;
     created_at: Date;
+    ref_user: string;
 }

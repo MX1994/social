@@ -18,6 +18,7 @@ const morgan_1 = __importDefault(require("morgan"));
 // Routes
 const index_routes_1 = __importDefault(require("./routes/index.routes"));
 const post_routes_1 = __importDefault(require("./routes/post.routes"));
+const user_routes_1 = __importDefault(require("./routes/user.routes"));
 class App {
     constructor(port) {
         this.port = port;
@@ -36,6 +37,7 @@ class App {
     routes() {
         this.app.use(index_routes_1.default);
         this.app.use('/posts', post_routes_1.default);
+        this.app.use('/users', user_routes_1.default);
     }
     listen() {
         return __awaiter(this, void 0, void 0, function* () {

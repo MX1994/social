@@ -11,3 +11,15 @@ CREATE TABLE posts(
 );
 
 DESCRIBE posts;
+
+CREATE TABLE IF NOT EXISTS users (
+  id int NOT NULL AUTO_INCREMENT,
+  name VARCHAR(60) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  password VARCHAR(100) NOT NULL,
+  PRIMARY KEY (id)
+  );
+
+ALTER TABLE posts ADD COLUMN ref_user INT NOT NULL;  
+
+ALTER TABLE posts ADD CONSTRAINT id_fk_user FOREIGN KEY(ref_user) REFERENCES users(id);
