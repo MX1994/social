@@ -1,0 +1,18 @@
+<div class="content mat-elevation-z4">
+  <mat-list>
+    <mat-list-item class="post-frame" *ngFor="let post of posts">
+      <img matListAvatar src="../../../../assets/images/user_icon1png.png" alt="avatar">
+      <h3 matLine> Murilo Fank </h3>
+      <p class="data">
+        <span> {{ post.created_at | date: 'dd/MM/yyyy HH:mm:ss' }} </span>
+      </p>
+      <p class="title" matLine>
+        <span> {{ post.title }} </span>
+      </p>
+      <p class="desc" matLine>
+        <span> {{ post.description }} </span>
+      </p>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-list>
+</div>

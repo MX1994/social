@@ -1,0 +1,37 @@
+.content {
+    margin-top: 20px;
+    width: 100%;
+}
+mat-list {
+    background-color: #212121;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post-frame {
+    padding: 10px 0px 0px 0px;
+}
+.post-frame h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.post-frame .title {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: 2px;
+}
+
+.post-frame .desc {
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.post-frame .data {
+    font-size: 0.7rem;
+}
