@@ -1,15 +1,7 @@
-.content {
+mat-list {
     margin-top: 20px;
     width: 100%;
-}
-mat-list {
     background-color: #212121;
-}
-.footer {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .post-frame {
