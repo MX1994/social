@@ -1,29 +1,19 @@
-mat-list {
-    margin-top: 20px;
-    width: 100%;
-    background-color: #212121;
+.title {
+    margin-left: 56px;
 }
 
-.post-frame {
-    padding: 10px 0px 0px 0px;
-}
-.post-frame h3 {
-    font-weight: 400;
-    font-size: 1.2rem;
+.description {
+    margin-left: 56px;
 }
 
-.post-frame .title {
-    font-weight: 300;
-    font-size: 1.1rem;
-    margin-top: 2px;
+.edit {
+    margin-right: 10px;
 }
 
-.post-frame .desc {
-    font-weight: 200;
-    font-size: 1rem;
-    margin-top: 5px;
+.edit > i {
+    color: #c2185b;
 }
 
-.post-frame .data {
-    font-size: 0.7rem;
+.delete > i {
+    color: #c2185b;
 }
