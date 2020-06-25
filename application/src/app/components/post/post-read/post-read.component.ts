@@ -14,9 +14,19 @@ export class PostReadComponent implements OnInit {
   constructor(private postService: PostService) { }
 
   ngOnInit(): void {
+    this.readPosts()
+  }
+
+  readPosts(): void {
     this.postService.read().subscribe(posts => {
       this.posts = posts
     })
   }
 
+  deletePost(id: string) {
+    this.postService.delete(id).subscribe(() => {
+      this.postService.showMessage('Post deleted!')
+      this.readPosts()
+    })
+  }
 }

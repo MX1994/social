@@ -28,4 +28,20 @@ export class PostService {
   read(): Observable<Post[]> {
     return this.http.get<Post[]>(this.baseUrl)
   }
+
+  readById(id: string): Observable<Post> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<Post>(url)
+  }
+
+  update(post: Post): Observable<Post> {
+    const url = `${this.baseUrl}/${post.id}`
+    return this.http.put<Post>(url, post)
+  }
+
+  delete(id: string): Observable<Post> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<Post>(url)
+  }
+  
 }

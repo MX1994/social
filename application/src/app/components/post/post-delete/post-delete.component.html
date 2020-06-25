@@ -1,17 +1,17 @@
 <mat-card>
-    <mat-card-title>New Post</mat-card-title>
+    <mat-card-title>Delete Post</mat-card-title>
     <form>
         <mat-form-field>
             <input matInput name="title" placeholder="Title"
-                [(ngModel)]="post.title">
+                [value]="post.title" disabled>
         </mat-form-field>
         <mat-form-field>
             <input matInput name="description" placeholder="What's on your mind?"
-            [(ngModel)]="post.description">
+            [value]="post.description" disabled>
         </mat-form-field>
     </form>
-    <button mat-raised-button (click)="createPost()" color="primary">
-        Post
+    <button mat-raised-button (click)="deletePost()" color="warn">
+        Confirm
     </button>
     <button mat-raised-button (click)="cancel()">
         Cancel

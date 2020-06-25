@@ -11,8 +11,10 @@ import { Post } from '../post.model';
 export class PostCreateComponent implements OnInit {
 
   post: Post = {
-    title: 'Título',
-    description: 'Descrição'
+    title: '',
+    description: '',
+    image_url: 'imagem',
+    ref_user: '1'
   }
 
   constructor(private postService: PostService, private router: Router) { }
