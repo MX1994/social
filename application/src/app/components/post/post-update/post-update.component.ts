@@ -10,12 +10,7 @@ import { Post } from '../post.model';
 })
 export class PostUpdateComponent implements OnInit {
 
-  post: Post = {
-    title: 'aaaa',
-    description: 'aaaa',
-    image_url: 'imagem',
-    ref_user: '1'
-  }
+  post: Post
 
   constructor(
     private postService: PostService,
@@ -26,7 +21,7 @@ export class PostUpdateComponent implements OnInit {
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')
     this.postService.readById(id).subscribe(post => {
-      this.post = post;
+      this.post = post[0];
       console.log(post)
     })
   }

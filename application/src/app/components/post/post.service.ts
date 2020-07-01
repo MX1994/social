@@ -16,8 +16,8 @@ export class PostService {
   showMessage(msg: string): void {
     this.snackBar.open(msg, '', {
       duration: 3000,
-      horizontalPosition: "center",
-      verticalPosition: "bottom"
+      horizontalPosition: "end",
+      verticalPosition: "top"
     })
   }
 

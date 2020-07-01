@@ -1,13 +1,13 @@
 <mat-card>
     <mat-card-title>Edit Post</mat-card-title>
-    <form *ngIf="post">
+    <form>
         <mat-form-field>
             <input matInput name="title" placeholder="Title"
-            [value]="post.title">
+            [(ngModel)]="post.title">
         </mat-form-field>
         <mat-form-field>
             <input matInput name="description" placeholder="What's on your mind?"
-            [value]="post.description">
+            [(ngModel)]="post.description">
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="updatePost()" color="primary">

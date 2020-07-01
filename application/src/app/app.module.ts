@@ -23,10 +23,10 @@ import { HomeComponent } from './views/home/home.component';
 import { PostCrudComponent } from './views/post-crud/post-crud.component';
 import { PostCreateComponent } from './components/post/post-create/post-create.component'
 import { PostReadComponent } from './components/post/post-read/post-read.component'
-
-import { PostService } from './components/post/post.service';
 import { PostUpdateComponent } from './components/post/post-update/post-update.component';
 import { PostDeleteComponent } from './components/post/post-delete/post-delete.component';
+
+import { PostService } from './components/post/post.service';
 
 @NgModule({
   declarations: [

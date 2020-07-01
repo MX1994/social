@@ -23,3 +23,5 @@ CREATE TABLE IF NOT EXISTS users (
 ALTER TABLE posts ADD COLUMN ref_user INT NOT NULL;  
 
 ALTER TABLE posts ADD CONSTRAINT id_fk_user FOREIGN KEY(ref_user) REFERENCES users(id);
+
+alter table posts modify column created_at timestamp default current_timestamp on update current_timestamp;
